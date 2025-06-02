@@ -1,0 +1,69 @@
+/* Company Page Specific Styles */
+
+.company-info {
+    margin-bottom: 3rem;
+}
+
+.company-info .container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 3rem;
+}
+
+.company-description h3,
+.company-culture h3 {
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.company-description h3:first-child {
+    margin-top: 0;
+}
+
+.values-list {
+    list-style-type: none;
+}
+
+.values-list li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.values-list li:before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.company-culture {
+    background-color: var(--light-gray);
+    padding: 2rem;
+    border-radius: 8px;
+    align-self: start;
+}
+
+.company-culture .cta-button-large {
+    margin-top: 1.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .company-info .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .company-culture {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .company-description h3,
+    .company-culture h3 {
+        font-size: 1.3rem;
+    }
+}
